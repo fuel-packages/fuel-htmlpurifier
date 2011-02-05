@@ -8,17 +8,15 @@
  * @link		http://htmlpurifier.org/
  * 
  * Minimal changes to original package to keep it easy to maintain.
- * Note: Only in library was in DefinitionCache/Serializer.php to get external 
- * value for default cache folder.
+ * Only DefinitionCache/Serializer.php file was modified to fetch 
+ * external default cache folder path info.
  */
 
 if (!defined('HTMLPURIFIER_PREFIX')) {
 	define('HTMLPURIFIER_PREFIX', realpath(dirname(__FILE__) ).'/classes/');
 }
 if (!defined('HTMLPURIFIER_CACHE')) {
-	// Get Fuel's DB config
-	Config::load('config', true);
-	$cache_dir = Config::get('config.cache_dir');
+	$cache_dir = Config::get('cache_dir');
 	define('HTMLPURIFIER_CACHE', $cache_dir );
 }
 
