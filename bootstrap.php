@@ -8,7 +8,8 @@
  * @link		http://htmlpurifier.org/
  * 
  * Minimal changes to original package to keep it easy to maintain.
- * Note: only
+ * Note: Only in library was in DefinitionCache/Serializer.php to get external 
+ * value for default cache folder.
  */
 
 if (!defined('HTMLPURIFIER_PREFIX')) {
