@@ -20,7 +20,7 @@ if (!defined('HTMLPURIFIER_CACHE')) {
 	define('HTMLPURIFIER_CACHE', $cache_dir );
 }
 
-Fuel\Core\Autoloader::add_classes(array(
+Autoloader::add_classes(array(
 'HTMLPurifier'	=> __DIR__.'/classes/HTMLPurifier.php',
 'HTMLPurifier_AttrCollections'	=> __DIR__.'/classes/HTMLPurifier/AttrCollections.php',
 'HTMLPurifier_AttrDef'	=> __DIR__.'/classes/HTMLPurifier/AttrDef.php',
